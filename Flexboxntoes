@@ -1,3 +1,25 @@
 I am not that good at this but im slowly learing!!!
 got to remember to save 
 I made it work yay!
+
+
+
+<img src="https://source.unsplash.com/random/150x150" alt="">
+lets u call url and gives you a random img from thier files
+
+default for justify-content is row
+justify content 
+flex start goes to left side
+flex end goes to right side
+center goes to middle
+space-between space in middles
+space-around space in middles and top and bottom
+
+flex -grow number The grow element or the grow property is dictating the rate at which an element is going to grow,
+ flex grow is the property that defines the ratio of how fast one of the elements grows in relation to the other items
+
+flex-basis pixels
+flex basis gives us the ability to define a baseline size for each one of these elements and then as it grows and shrinks the flex basis doesn't change but it does automatically dictate the percent of the parent element that these items are going to take up.
+
+ flex shrink. And now this one is kind of backward so this is kind of the opposite of the other items. It works the same way as flex grow does except going in the other direction.
+ So typically the way that you work with flex shrink is you would have a flex basis for one of these items so I'm going to give flex basis here and I'm gonna turn it on actually for each one of these hit save. And now you can see that we are kind of back to where we were.
