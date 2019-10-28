@@ -23,3 +23,5 @@ flex basis gives us the ability to define a baseline size for each one of these 
 
  flex shrink. And now this one is kind of backward so this is kind of the opposite of the other items. It works the same way as flex grow does except going in the other direction.
  So typically the way that you work with flex shrink is you would have a flex basis for one of these items so I'm going to give flex basis here and I'm gonna turn it on actually for each one of these hit save. And now you can see that we are kind of back to where we were.
+
+https://developer.mozilla.org/en-US/docs/Glossary/Flexbox
