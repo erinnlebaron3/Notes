@@ -1,7 +1,7 @@
 git init - makes new repository
 git status - use when in doubt
 git add (file name)
-git add with . adds everything
+git add with "." adds everything
 git commit -m "anything i want"
 create new repository on github
 copy last two comands and paste in terminal
@@ -14,3 +14,6 @@ git add .
 git commit -m "message"
 git push
 
+https://mx.devcamp.com/12/guide/1525
+
+must be in bash not cmd.

@@ -1,0 +1,12 @@
+When programming, we are giving instructions to the computer
+
+We have to write in a language the computer can interpret and turn into an actionable code
+
+The system will compile this code into a set of ones and zeros for the actual computer’s processing
+
+For a more complex sample, we can put in a link to an API inside. This is something on the Internet or some other API that stores data.
+     Using this set of instructions, the system will convert and perform the print statement just as before.
+
+the reality behind all this complexity is that we are simply formatting instructions for computers to be able to execute them.
+
+programming writing instructions down for the computer to read
