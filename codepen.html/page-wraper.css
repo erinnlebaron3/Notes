@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+  }
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    flex-direction: column;
+}
+
+.left-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1f26;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.right-column-wrapper {
+    background-color: #1e1f26;
+    border: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.page-container {
+    display: flex;
+    justify-content: left;
+}
+
+.page-container > .left-column-wrapper {
+    width: 188px;
+    margin: 23px 40px 0px;
+    float: left;
+    border: 1px solid #1e1f26;
+}
+
+.icon img{
+    height: 33.3%;
+    width: 33.3%;
+}
+
+.nav-title {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: block;
+    padding: 20px 5px 5px 10px;
+}
+
+.explore-wrapper > .nav-link  {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+}
+
+.grow-wrapper > .nav-link {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+}
+
+.companies-wrapper > .nav-link {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+}
+
+.links-wrapper > .nav-link  a {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    color: #c7c9d3;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.nav-link  {
+    padding: 5px 5px 5px 10px;
+    color: #c7c9d3;
+}
+
+.btn-wrapper > .btn1 {
+    background: #000;
+    color: #fff;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    padding: 5px 5px 10px 10px;
+    display: flex;
+}
+
+.btn-wrapper > .btn2 {
+    background: #47cf73;
+    color: #000;
+    padding: 10px 16px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.btn-wrapper > .btn3 {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #444857;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-wrapper > .btn4 {
+    display: flex;
+    padding: 10px 16px;
+    background: #2fb45a;
+    color: #000;
+    font-size: 1.375em;
+}
+
+.right-column-wrapper > .topnav {
+    display: flex;
+
+    background: #262830;
+    color: white;  
+    padding: 14px 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none; 
+}
+
+#luck-be-a-logo {
+    filter: invert(100%);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+p {
+    color: whitesmoke;
+    font-size: x-large;
+}

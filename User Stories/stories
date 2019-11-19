@@ -1,0 +1,55 @@
+Elvis' art
+open homepage has two pictures tree and sculpture
+must click login and give email and password
+allows you to see 
+about page with reviews
+contact page with 
+    phone number 
+    email
+    social media
+request piece page with 
+    spot for name first and last
+    bar for what you want
+    distription box
+    conects straight to Elvis email
+sculpture page
+    with basic links to big or small
+    dropdown with more clickable specifics
+        wood base
+        metal base
+        no base
+        bowls
+tree page
+    basic links of big or small
+        copper
+        silver
+        with beads
+        on rock
+        on wood
+link to see all products for sale
+
+consignment starter
+    login
+    read
+        about page
+        and reviews
+    link to see all products
+    contact to talk possiabilities
+
+User 1
+    login
+    request piece page
+        write first and last name
+        email
+        type of product looking for 
+        distription of how you want in box
+        send straight to Elvis email
+
+User 2
+    login
+    pick sculpture or trees
+    pick small, large, or all
+    if picked small or large can look at all or specific designs
+    choose product
+    redirect to checkout and pickup time
+    write review

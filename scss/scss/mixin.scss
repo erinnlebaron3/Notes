@@ -1,0 +1,17 @@
+
+
+@mixin practice {
+    color: red;
+    background-color: darkblue;
+    &:hover {
+        color: pink;
+    }
+}
+
+
+h1 {
+    @include practice
+}
+p {
+    @include practice;
+}

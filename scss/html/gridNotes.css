@@ -1,0 +1,23 @@
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+/* https://css-tricks.com/things-ive-learned-css-grid-layout/#article-header-id-2 */
+
+/* grid-column and grid-row is these as you can see right here this is shorthand for a few other commands  */
+
+/* commands like grid columns start grid column and grid rows start and then grid row end.*/
+
+/*  start at 1 and then we when you ever anytime you see a negative one what that means is you want it to go to 
+the very end */
+
+/* the very first element is the start line and the next one after the slash is the end line */
+
+
+/* In their example of this, you could say grid-column: 3 / span 2;, which means this is a start line and 
+then you want it to span two columns whenever we say that we want it to be negative 1 that means we actually 
+want it to go to the very end and take up all that space. */
+
+/* "Grid is designed to be used with flex box not instead of it."  */
+
+/* "There's nothing wrong with this approach. However, with CSS grid, it's just as easy to redefine the number of columns. 
+By using -1, you can be sure that your content will always reach the end." */
+
+/* Anytime you see a negative one what that means is that it makes sure that the values are going all the way to the end. */

@@ -1,0 +1,16 @@
+// @include calls the mixin
+// @mixin
+// $link-color can add as argument to @mixin featured()
+// &:hover{} to call a hover in a mixin
+// $bg-color is bachground color
+// @if rule is written @if <expression> { ... }, and it controls whether or not its block gets evaluated (including emitting any styles as CSS). 
+// The expression usually returns either true or false
+// @else An @if rule can optionally be followed by an @else rule, written @else { ... }. This rule’s block is evaluated if the @if expression returns false
+// @else if <expression> { ... }. If you do, the block is evaluated only if the preceding @if’s expression returns false and the @else if’s expression returns true.
+// @content is useful for inject a copy of rules inside your mixin
+// @content is to inject nested selectors:
+// @content allows for some flexability
+
+
+
+// SCSS is to make less repition and call files less

@@ -1,0 +1,228 @@
+$off-white: #f6f6f6;
+$featured-color: DarkGreen;
+
+@mixin heading-feature-styling {
+  $featured-color: DarkRed !default;
+  color: $featured-color;
+}
+
+@mixin section-feature-styling {
+  $featured-color: DarkRed !default;
+  background-color: $featured-color;
+  padding: 42px;
+  color: $off-white;
+}
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+
+  .featured {
+    @include heading-feature-styling;
+  }
+
+  .page-content {
+    @include section-feature-styling;
+  }
+}
+
+
+/* with hovers */
+
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: LightCoral;
+
+  .featured {
+    color: $featured-color;
+    .subheading a {
+      color: CornflowerBlue;
+      text-decoration: none;
+      &:hover {
+        color: DarkOliveGreen;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .page-content {
+
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+    .container {
+      font-family: courier;
+    }
+  }
+}
+
+
+
+
+
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+@mixin featured($link-color: Black) {
+  color: Tomato;
+  .subheading a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+$off-white: #f6f6f6;
+$featured-color: DarkRed;
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: LightCoral;
+
+  .featured {
+    color: $featured-color;
+    .subheading a {
+      color: CornflowerBlue;
+      text-decoration: none;
+      &:hover {
+        color: DarkOliveGreen;
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+
+
+
+
+  .page-content {
+
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+    .container {
+      font-family: courier;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: $off-white;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
+  font-family: Verdana;
+  font-size: 0.8rem;
+}
+
+.page-wrapper { 
+  padding: 21px;
+  $featured-color: RoyalBlue;
+
+  .featured {
+    @include featured;
+  }
+
+  .page-content {
+    background-color: $featured-color;
+    padding: 42px;
+    color: $off-white;
+
+    .container {
+      height: 60px !important;
+      font-family: courier;
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        @include featured(MintCream);
+      }
+    }
+  }
+}
+
+
+
+
+// flexbox in mixin with multiple flex's
+
+
+
+.container{
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex: 1;
+  .content {
+    display:flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex: 1;
+  }
+}
+
+

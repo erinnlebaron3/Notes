@@ -1,0 +1,141 @@
+CREATE A USER
+
+db.createUser({
+  user: 'Erinn',
+  pwd: 'erinnlebaron3',
+  customData: { startDate: new Date() },
+  roles: [
+    { role: 'clusterAdmin', db: 'admin' },
+    { role: 'readAnyDatabase', db: 'admin' },
+    'readWrite'
+  ]
+})
+
+db.getUsers()
+db.dropUser('jon')
+
+GET USER
+db.getUsers()
+
+DELETE USER
+db.dropUser('')
+
+CLEAR CMD PROMPT
+cls+Enter clears clutter
+
+GET IN MONGO
+mongo 
+
+IF MONGO DOESN'T WORK RUN
+mongod 
+
+MONGO COLLECTIONS
+db.createCollection('')
+
+HOW TO SEE COLLECTIONS IN MONGO DATABASE 
+show collections 
+
+INSERTING DOCUMENTS IN COLLECTION
+ex. db.books.insert({
+
+})
+
+no schema whatsoever mongo doesnt care about column names or keys each name can be unique
+but be responiable and use 
+important to understand what your structure looks like
+
+ Mongo itself doesn't care. It does not care about your data and care about the structure it's so flexible it 
+ simply allows you to store these object kind of documents and then you're in charge of managing first the creation 
+ but then also the ability to Querrey them.
+
+  very important component
+   if this is implemented poorly then you're going to run into a number of bugs and you're going to have to
+    build many different scripts to clean up your data
+ make sure that you're cognizant of that and so that you'll be able to make sure and you'll be confident 
+ that when you query something you'll know the various attributes that are in there   
+
+
+INSERT MANY DOCUMENTS INTO MONGODB COLLECTION
+db.books.insertMany([
+    {
+
+}
+])
+
+QUERY ALL DOCUMENTS WITH FIND() METHOD
+db.books.find()
+db.books.find().pretty()
+SQL Equivalent
+SELECT * from books
+
+QUERY SPECIFIC DOCUMENTS IN MONGODB COLLECTION
+db.books.find( {name: "OOP Programming"} ).pretty()
+SQL Equivalent
+SELECT * from books WHERE name = "OOP Programming"
+
+if more than one item with the same name runs all collections with that name if multiple
+
+MONGODB PROJECTIONS
+various constrains put on query so that we can ensure that we're only getting back the elements that we actually want. 
+So what find allows us to do is not only pass in what we've done so far which is pass and a single object. 
+It also allows us to pass in our second object which is our projection. 
+the way that Mongo works is it is expected that if you want the value then in that list of projections you're going to ask for it.
+ if you do not want the id field then you can pass in a zero
+simply have to list out with either a 1 or a 0 which one of the attributes that you want to return. 
+
+SLICE METHOD MONGO
+ pass in a special function called $slice and with $slice what I can do is pass in and say I want this specific element in the array. 
+  wanted to go the other direction then we could say $slice: 2 and that would bring us back the second item 
+ working with a very similar construct as that is contained in pretty much every other programming language which is our array manipulation. 
+what that means is if you remember back authors is an array.
+So the nice thing about working with Mongo is we're able to treat that array just like we would in regular programming language
+ in a regular language if I gave a -1 to an array index that will go backwards and it will go pull whatever the last 
+ author is or the last element in the array and you'll pull that one whereas we could pass in and go one and two and 
+ bring the first couple items so that using the slice method is a very nice way of being able to go into nested 
+ collections and be able to retrieve only the data that you want to have.
+
+HOW TO QUERY STRING PROTION 
+db.books.findOne({ name: /.*deep work.*/i })
+implement what's called a regular expression and then you're going to match for something similar.
+have the slashes (//) because what these slashes do and this is pretty much common in just about every programming 
+language I've ever worked in is whenever you see text in between slashes. 
+ typically means it's going to be a regular expression and that it's trying to match a pattern in a string. 
+our dot and asterisk here what we're saying is regardless if this content is at the beginning the middle or the end.
+you to bring back anything that matches this set of values now where the i comes in
+ makes it case insensitive that means that deep work
+
+DELETE DOCUMENTS IN MONGODB
+db.books.remove({name: "OOP Programming"}, 1) // Removes a single document
+db.books.remove({name: "OOP Programming"}) // Removes all documents
+
+
+INCLUDE NESTED FIELDS IN FIND QUERY
+WriteResult9{"nInsterted" : 1 })
+ can't use our same syntax as we're using right here where we write it without the strings.
+  need to embed this in strings
+ can say is authors which is a name of our collection and then name and so we have authors which is an array and then 
+ inside of it there are all of those various elements we have all those objects  
+when we do authors dot name what Mongo's going to do it's going to go into that array and then it's all going to go 
+through each one of those objects each one of those authors objects and then it's going to bring back the name attribute 
+only and we can give that a 1 and then we'll also add the pretty function at the end. And now let's run this. 
+If I run this now you can see that it only returns the authors and their respective names. It doesn't bring back if 
+they're active or not. 
+biggest key here to remember is you have the ability with those embedded nested objects to be able to go through them by 
+first calling the name of whatever the key is here and then follow that up by whatever the key is inside of all the nested 
+objects.
+
+
+FINDONE METHOD TO QUERY SINGLE DOCUMENT 
+db.books.findOne({ name: "OOP Programming" } )
+db.books.find({name: "Blink"})
+db.books.find({name: "Blink"}).length() -- many times where you want to be able to see how many elements match a query and 
+you can use the length function for that. 
+db.books.findOne({name: "Blink"})
+
+
+HOW TO CHECK IF A FIELD EXISTS IN MONGO DOCUMENT
+db.books.find({ reviews: { $exists: true } })
+db.books.find({ reviews: { $exists: false } })
+adding this concept of reviews and then it's going to have a count 
+D-B books find and then pass in an objects
+another function that we can have is $exists
